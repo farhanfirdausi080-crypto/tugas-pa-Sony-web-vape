@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kakek Vape - Premium Vapestore</title>
+  <!-- Menghubungkan ke file CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Navbar Fixed Atas -->
+  <nav class="nav-atas">
+    <div class="logo-toko">
+      <!-- Menggunakan logo vape dari URL pencarian -->
+      Kakek <span>Vape</span>
+    </div>
+    <ul class="menu-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#produk-list">Vape</a></li>
+      <li><a href="#order-form">Buy Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. Hero Section -->
+  <header class="hero-banner">
+    <div class="konten-hero">
+      <h1>Premium <span>VAPE</span> Experience</h1>
+      <p>Menyediakan vape dengan beraneka ragam nan mewah, Standar kualitas tinggi khusus untuk para vapers sejati.</p>
+      <!-- 4. Tombol CTA -->
+      <a href="#order-form" class="tombol-cta">Explore Flavors</a>
+    </div>
+  </header>
+
+  <!-- 5. Animasi Keyframe Kreatif -->
+  <div class="icon-animasi">⚜️</div>
+
+  <main class="wrapper">
+    
+    <!-- 3. Grid 4 Kartu Produk -->
+    <section id="produk-list">
+      <h2 class="judul-halaman">Premium Vape</h2>
+      <div class="grid-produk">
+        
+        <div class="kartu-produk">
+          <img src="https://i0.wp.com/www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-37204571/voopoo_voopoo_vinci_pod_royal_edition_15w_800mah_pod_kit_-_vinci_royal_pod_full02_cm1crbb8.jpg?w=720&ssl=1=400" alt="Vape RELX">
+          <h3>RELX</h3>
+          <p>Vape merek relax ini banyak varian warna dan kualitas premium.</p>
+        </div>
+
+        <div class="kartu-produk">
+          <img src="https://i0.wp.com/www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-37204571/voopoo_voopoo_vinci_pod_royal_edition_15w_800mah_pod_kit_-_vinci_royal_pod_full02_cm1crbb8.jpg?w=720&ssl=1=400" alt="Vape VINCI">
+          <h3>VINCI</h3>
+          <p>Vape merek Vinci ini banyak varian baru dan kualitas premium.</p>
+        </div>
+
+        <div class="kartu-produk">
+          <img src="https://i0.wp.com/www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-37204571/voopoo_voopoo_vinci_pod_royal_edition_15w_800mah_pod_kit_-_vinci_royal_pod_full02_cm1crbb8.jpg?w=720&ssl=1=400" alt="Vape OXVA">
+          <h3>OXVA</h3>
+          <p>Vape merek Oxva ini banyak varian dan kualitas premium.</p>
+        </div>
+
+        <div class="kartu-produk">
+          <img src="https://i0.wp.com/www.static-src.com/wcsstore/Indraprastha/images/catalog/full//93/MTA-37204571/voopoo_voopoo_vinci_pod_royal_edition_15w_800mah_pod_kit_-_vinci_royal_pod_full02_cm1crbb8.jpg?w=720&ssl=1=400" alt="Vape MIMO">
+          <h3>MIMO</h3>
+          <p>Vape merek mimo ini banyak warna yg bagus dan kualitas premuim.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Form Order -->
+    <section id="order-form">
+      <h2 class="judul-halaman">Order Form</h2>
+      <div class="wadah-form">
+        
+        <!-- Checkbox pemicu spinner -->
+        <input type="checkbox" id="cek-klik">
+
+        <div class="baris-form">
+          <label for="email">Email Pembeli</label>
+          <input type="email" id="email" placeholder="Kakekvape@email.com" required>
+        </div>
+
+        <div class="baris-form">
+          <label for="category">Pilih Kategori</label>
+          <select id="category">
+            <option value="relx">vape Relex</option>
+            <option value="vinci">Vape Vinci</option>
+            <option value="oxva">Vape oxva</option>
+            <option value="mimo">vape Mimo</option>
+          </select>
+        </div>
+
+        <div class="baris-form">
+          <label for="quantity">Jumlah</label>
+          <input type="number" id="quantity" min="1" value="1">
+        </div>
+
+        <div class="baris-form">
+          <label for="payment">Metode Pembayaran</label>
+          <select id="payment">
+            <optgroup label="Bank Umum Indonesia">
+              <option value="bca">Bank BCA</option>
+              <option value="mandiri">Bank Mandiri</option>
+              <option value="bni">Bank BNI</option>
+              <option value="bri">Bank BRI</option>
+            </optgroup>
+            <optgroup label="E-Wallet Indonesia">
+              <option value="gopay">GoPay</option>
+              <option value="ovo">OVO</option>
+              <option value="dana">DANA</option>
+              <option value="shopeepay">ShopeePay</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Label sebagai tombol pemicu klik -->
+        <label for="cek-klik" class="tombol-beli">Buy Now</label>
+
+        <!-- Wadah Loading Spinner -->
+        <div class="wadah-spinner">
+          <div class="spinner-bulet"></div>
+          <div class="teks-spinner">Memproses Pesanan...</div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
